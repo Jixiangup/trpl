@@ -196,6 +196,7 @@ version = "1.0.0"
 dependencies = [
  "clap",
  "crawler",
+ "trpl-core",
 ]
 
 [[package]]

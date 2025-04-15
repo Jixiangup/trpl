@@ -14,6 +14,7 @@ documentation.workspace = true
 [dependencies]
 clap.workspace = true
 crawler.workspace = true
+trpl-core.workspace = true
 
 [lints]
 workspace = true
