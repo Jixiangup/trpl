@@ -1,0 +1,21 @@
+[package]
+name = "crawler"
+version = "0.1.0"
+rust-version.workspace = true
+edition.workspace = true
+license-file.workspace = true
+description.workspace = true
+homepage.workspace = true
+authors.workspace = true
+readme.workspace = true
+repository.workspace = true
+
+[dependencies]
+clap.workspace = true
+trpl-core.workspace = true
+async-trait.workspace = true
+reqwest.workspace = true
+scraper = "0.23.1"
+
+[lints]
+workspace = true

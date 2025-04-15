@@ -1,0 +1,18 @@
+[package]
+name = "trpl-core"
+rust-version.workspace = true
+edition.workspace = true
+license-file.workspace = true
+description.workspace = true
+homepage.workspace = true
+authors.workspace = true
+readme.workspace = true
+repository.workspace = true
+version.workspace = true
+documentation.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+
+[lints]
+workspace = true

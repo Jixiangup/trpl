@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+members = [ "crates/cli", "crates/trpl-core", "crates/crawler"]
+
+[workspace.package]
+rust-version = "1.86.0"
+edition = "2024"
+license-file = "LICENSE"
+description = "The Rust Programming Language demonstration project"
+homepage = "https://github.com/jixiangup/trpl"
+authors = ["Jixon"]
+readme = "README.md"
+repository = "https://github.com/jixiangup/trpl"
+version = "1.0.0"
+documentation = """
+# The Rust Programming Language
+"""
+
+[workspace.dependencies]
+# local dependencies
+crawler = { path = "crates/crawler" }
+trpl-core = { path = "crates/trpl-core" }
+cli = { path = "crates/cli" }
+
+tokio = { version = "1.44.2", features = ["rt", "rt-multi-thread", "macros"] }
+clap = { version = "4.5.36", features = ["derive"] }
+async-trait = "0.1.88"
+reqwest = "0.12.15"
+
+[workspace.lints.rust]
+
+[dependencies]
+tokio.workspace = true
+cli.workspace = true
+clap.workspace = true
+trpl-core.workspace = true
+
+[package]
+name = "trpl"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
+edition.workspace = true
+license-file.workspace = true
