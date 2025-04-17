@@ -32,8 +32,6 @@ reqwest = "0.12.15"
 [dependencies]
 tokio.workspace = true
 cli.workspace = true
-clap.workspace = true
-trpl-core.workspace = true
 
 [package]
 name = "trpl"
